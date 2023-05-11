@@ -51,6 +51,7 @@ default = [
   "filesystem_watcher",
   "android_shared_stdcxx",
   "tonemapping_luts",
+  "limit_directional_light",
 ]
 
 # Force dynamic linking, which improves iterative compile times
@@ -79,6 +80,9 @@ bevy_gltf = ["bevy_internal/bevy_gltf"]
 
 # Adds PBR rendering
 bevy_pbr = ["bevy_internal/bevy_pbr"]
+
+# Limit directional light in pbr
+limit_directional_light = ["bevy_internal/limit_directional_light"]
 
 # Provides rendering functionality
 bevy_render = ["bevy_internal/bevy_render"]
